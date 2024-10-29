@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Branding on the left */
+.navbar .branding {
+    display: flex;
+    align-items: center;
+}
+
+/* Brand image */
+.navbar .branding img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Title text next to the image */
+.navbar .branding .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navbar links on the right */
+.navbar .nav-links {
+    display: flex;
+    margin-right: 100px;
+    gap: 5rem;
+}
+
+/* Individual link styling */
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+.navbar .nav-links a:hover {
+    color: #ddd;
+}
