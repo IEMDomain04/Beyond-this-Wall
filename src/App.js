@@ -1,6 +1,5 @@
 import React from "react";
-import NavBar from './components/NavBar/NavBar'; // Default export
-
+import NavBar from "./components/NavBar/NavBar"
 
 function App() {
     return (
