@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url("https://img.freepik.com/free-photo/grungy-white-background-natural-cement-stone-old-texture-as-retro-pattern-wall-conceptual-wall-banner-grunge-material-construction_1258-21340.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1; 
+}
+
+#header-texts {
+    padding: 20rem 12rem;
+}
+
+#title {
+    font-size: 100px;
+}
+
+#subtitle {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#action-btn {
+    padding: 20px 50px;
+    background: wheat;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+#action-btn:hover {
+    background: rgb(255, 226, 173);
+    transform: scale(1.1);
+}
