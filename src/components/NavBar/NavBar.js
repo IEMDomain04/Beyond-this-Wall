@@ -2,17 +2,21 @@ import React from "react";
 import './NavBar.css';
 
 function NavBar() {
-    return (
-      <nav className="navbar">
-        <div className="branding" data-aos="fade-right" data-aos-duration="3000">
-            <img src="https://cdn-icons-png.flaticon.com/128/9920/9920949.png" alt="Brand Logo" />
-            <span className="title">Beyond the Walls</span>
+  return (
+    <nav className="navbar">
+      <nav>
+        <div class="logo">
+          <img src="https://cdn-icons-png.flaticon.com/128/698/698633.png" alt="Logo" />
         </div>
-        <div className="nav-links" data-aos="fade-right" data-aos-duration="3000">
-            <a href="#about">About</a>
-            <a href="#places">Places</a>
-        </div>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Places</a></li>
+          </ul>
       </nav>
+      </nav >
     );
 }
 

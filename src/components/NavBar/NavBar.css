@@ -1,54 +1,96 @@
 * {
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navbar container */
-.navbar {
+html, body {
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
+    padding: 1rem .1rem;
+    z-index: 1000;
 }
 
-/* Branding on the left */
-.navbar .branding {
+/* Logo */
+nav .logo img {
+    height: 80px;
+}
+
+/* Menu Styles */
+nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
+    gap: 1.5rem;
 }
 
-/* Brand image */
-.navbar .branding img {
-    height: 50px;
-    margin-right: 10px;
+nav ul li {
+    padding: 0.5rem 1rem;
 }
 
-/* Title text next to the image */
-.navbar .branding .title {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* Navbar links on the right */
-.navbar .nav-links {
-    display: flex;
-    margin-right: 100px;
-    gap: 5rem;
-}
-
-/* Individual link styling */
-.navbar .nav-links a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    font-size: 2rem;
-    transition: color 0.3s;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color .5s ease, border-color .5s ease;
 }
 
-/* Hover effect */
-.navbar .nav-links a:hover {
-    color: #ddd;
+nav ul li a:hover {
+    color: blue;
+    border-color: black;
+}
+
+
+
+/* Hamburger Menu */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .logo img {
+        height: 60px;
+    }    
+
+    .menu-icon {
+        display: block;
+    }
 }
